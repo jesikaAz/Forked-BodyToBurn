@@ -1,0 +1,435 @@
+/* CSS BODY TO BURN */
+
+body,html {
+  width: 100%;
+  height: 100%;
+  margin:0 auto;
+}
+
+.container-fluid {
+    padding:0;
+}
+
+/*Fonts*/
+
+h1,h2,h3,h4 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+
+
+/* Navbar */
+
+#mainNav {
+  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+  background-color: #fff;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s; }
+
+  #mainNav .navbar-brand {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #F05F40; }
+
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+      color: #f05f40; }
+
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+    font-size: .9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #212529; }
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+      color: #F05F40; }
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+      color: #F05F40 !important;
+      background-color: transparent; }
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+        background-color: transparent; }
+
+@media (min-width: 992px) {
+#mainNav {
+      border-color: transparent;
+      background-color: transparent; }
+
+#mainNav .navbar-brand {
+        color: rgba(255, 255, 255, 0.7); }
+
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+          color: #fff; }
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link {
+        padding: 0.5rem 1rem; }
+      
+#mainNav .navbar-nav > li.nav-item > a.nav-link,#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+        color: rgba(255, 255, 255, 0.7); }
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+          color: #fff; }
+    
+#mainNav.navbar-shrink {
+        border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+        background-color: #fff; }
+#mainNav.navbar-shrink .navbar-brand {
+          color: #F05F40; }
+
+#mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+            color: #f05f40; }
+
+#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
+#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+          color: #212529; }
+    
+#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+            color: #F05F40; } }
+
+/* Header */
+
+header.bckg {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("../img/header.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/* Début des Sections */
+
+section {
+  padding: 0; }
+
+.section-heading {
+  margin-top: 0; }
+
+/* Section About */ 
+
+.bg-primary {
+  background-color: #4A4A4A !important; }
+
+.bg-orange {
+  background-color:#EC644A !important; }
+
+.mx-auto {
+    padding-right: 0px;
+}
+
+.text {
+    color:white;
+    text-align: center;
+}
+
+.section-heading {
+    color: #858586;
+    margin: 0 0 2rem;
+    font-family: 'Montserrat Light', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 3.125rem;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*Section Portfolio */ 
+
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 322px;
+  margin: 0 auto; }
+
+.portfolio-box .portfolio-box-caption {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background:rgba(211, 53, 22, 0.85);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s; }
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+      text-align: center; }
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        padding: 0 15px;
+        font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase; }
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 18px; }
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1; }
+
+.portfolio-box:focus {
+    outline: none; }
+  @media (min-width: 768px) {
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+      font-size: 16px; }
+      
+ .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+      font-size: 22px; } }
+
+
+.staff {
+    background-color:#B1B2B4;
+    height:282px;
+}
+
+.staff h3 {
+    font-size: 1.25rem;
+    text-align: center;
+    color: #4A4A4A;
+    padding-top:150px;
+    font-weight: 700;
+    text-transform:uppercase;
+}
+
+
+.img-fluide{
+    max-width: 100%;
+    height:321px;
+}
+
+.img-fluid3{
+    width:644px;
+    height:321px;
+}
+
+.service-box {
+    max-width: 430px;
+    background-color: #E4E4E4;
+}
+
+/* Section Train */ 
+
+.training-tile {
+    width: 150px;
+    height: 150px;
+}
+
+.text-center {
+    margin:auto;
+    padding:50px;
+}
+.center-img {
+    text-align: center;
+    background-color:#E4E4E4;
+    height:322px;
+    padding:50px;
+}
+
+.training{
+    border-color:white;
+    border-style: solid;
+}
+
+
+h3 {
+    font-size: 1rem;
+}
+
+/* Section Our community */ 
+
+
+.mb-3 {
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color:#4A4A4A;
+}
+
+.text-white {
+    color:white;
+    font-size:16px;
+}
+
+.train {
+    background-color:#4A4A4A;
+    width:645px;
+    height:322px;
+    padding:30px;
+}
+
+p {
+    margin: 0 0 11.5px;
+    color:#4A4A4A;
+
+}
+
+.mb-4 {
+    color:white;
+    font-size: 3.125rem;
+}
+
+.connect {
+    height:322px;
+    background-color:#B1B2B4;
+}
+
+.connect-2 {
+    height:322px;
+    background-color:#4A4A4A;
+}
+
+.connect-2 h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: #B1B2B4;
+    padding-top:150px;
+    font-weight: 600;
+    text-transform:uppercase;
+}
+
+.connect h3 {
+    font-size: 1.25rem;
+    text-align: center;
+    color: #4A4A4A;
+    padding-top:150px;
+    font-weight: 700;
+    text-transform:uppercase;
+}
+
+.social {
+    height:322px;
+    background-color: #4A4A4A;
+    text-align: center;
+}
+
+.social-r{
+    height:322px;
+    background-color: #363636;
+    text-align: center;
+}
+
+.fa-3 {
+        font-size: 1.5em;
+}
+
+.col-lg-3 {
+    padding:0px;
+}
+
+.social-r h3{
+    color:#EC644A;
+    font-size:12px;
+    padding:70px;
+}
+
+.social h3{
+    color:#EC644A;
+    font-size:12px;
+    padding:70px;
+}
+
+i.fa {
+    display: inline-block;
+    position: absolute;
+    padding-top:17px;
+    transform: translateX(-50%) translateY(-50%);
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 100%;
+    background: white;
+    color: #363636;
+    border: 3px solid white;
+}
+
+
+.testimonial {
+    background-color:#E7E7E7;
+    height:322px;
+    font-size: 0.8125rem;
+    padding-top:100px;
+    padding-left:30px;
+}
+
+.testimonial-r {
+    background-color:#E7E7E7;
+    height:322px;
+}
+
+.testimonials {
+    height:322px;
+    background-color: #EC644A;
+    color:#fff;
+    display: inline-flex;
+    padding-top:70px;
+}
+
+.bubble {
+    background-image:url(http://bodytoburn.com.au/bodytoburn/wp-content/uploads/2016/10/Alice-416x416.jpg);
+    width:50%; 
+}
+
+
+/* Section Contact Us */
+
+
+.sport, .map{
+    width:100%;
+    padding:0px;
+    height:322px;
+}
+
+.local {
+    height:322px;
+    background-color: #E7E7E7;
+    text-align: center;
+    padding-top:60px;
+}
+
+.localisation {
+    height:150px;
+    width:100%;
+}
+
+.local h3{
+    color:#EC644A;
+    font-size:12px;
+}
+
+.footer-links {
+    background-color:#EC644A;
+    height:165px;
+    padding:45px;
+}
+
+.link {
+   height:35px;
+   display:inline-block;
+   padding-left:40px;
+}
+
+.footer-b {
+    padding:0;
+}
+
+
+
+
